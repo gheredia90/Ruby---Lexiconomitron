@@ -9,9 +9,9 @@ class Lexiconomitron
 		[array_words_reversed[0], array_words_reversed[-1]]
 	end	
 
-end	
+	def oompa_loompa(array_words)
+		array_cut = array_words.select{ |word| word.length<=3 }
+		array_cut.map!{|word| eat_t(word)}
+	end	
 
-# array_words = ["This", "is", "a", "boring", "test"]
-# puts l = Lexiconomitron.new.eat_t("capo")
-# print a = Lexiconomitron.new.shazam(array_words) 
-# puts "" 
+end
